@@ -7,11 +7,10 @@ const App = () => {
 
     const getData = async () => {
         try {
-            const response = await fetch('http://localhost:8080/womenitems'
-            );
+            // const response = await fetch('http://localhost:8080/womenitems');
+            const response = await fetch('http://localhost:8080/api/womenItems');
             const resJson = await response.json();
-            console.log('>>>>>>>', resJson);
-            setData(resJson);
+            setData(resJson._embedded.womenItems);
         } catch (error) {
             console.error(error);
         }
@@ -24,13 +23,15 @@ const App = () => {
         <div className="App">
             <h1>Market Item</h1>
             {
-                data.map((items, index) => {
+                data.map((item, index) => {
                     return (
                         <div key={index}>
-                            <p>{items.itemName}</p>
+                            <p>{item.itemName}</p>
+                            <p>{item.id}</p>
                         </div>
-                    );
+                    )
                 })
+
             }
         </div>
     );
