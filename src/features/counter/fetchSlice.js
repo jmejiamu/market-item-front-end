@@ -15,15 +15,15 @@ const itemsDataSlice = createSlice({
         info: []
     },
     reducers: {
-        getRecipes: state => {
+        getData: state => {
             state.loading = true;
         },
-        getRecipesSuccess: (state, { payload }) => {
-            state.info = payload
+        getDataSuccess: (state, action) => {
+            state.info = action.payload
             state.loading = false
             state.hasErrors = false
         },
-        getRecipesFailure: state => {
+        getDataFailure: state => {
             state.loading = false
             state.hasErrors = true
 
@@ -32,18 +32,19 @@ const itemsDataSlice = createSlice({
 })
 
 //Three actions genereted from the slice
-export const { getRecipes, getRecipesSuccess, getRecipesFailure } = itemsDataSlice.actions
+export const { getData, getDataSuccess, getDataFailure } = itemsDataSlice.actions
 
 
 // selector
 export const itemsSelector = state => state.info
+
 // The reducer
 export default itemsDataSlice.reducer
 
 // Asynchronous thunk action
 export function fetchData() {
     return async dispatch => {
-        dispatch(getRecipes())
+        dispatch(getData())
 
         try {
             const response = await fetch('http://localhost:8080/api/womenItems');
@@ -51,9 +52,9 @@ export function fetchData() {
 
             console.log('>>', data._embedded.womenItems);
 
-            dispatch(getRecipesSuccess(data._embedded.womenItems))
+            dispatch(getDataSuccess(data._embedded.womenItems))
         } catch (error) {
-            dispatch(getRecipesFailure());
+            dispatch(getDataFailure());
         }
     }
 }

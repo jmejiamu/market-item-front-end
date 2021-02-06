@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -12,25 +12,12 @@ const App = () => {
 
     console.log('INFO: ', info);
 
-    // const [data, setData] = useState([]);
-
-    // const getData = async () => {
-    //     try {
-    //         const response = await fetch('http://localhost:8080/api/womenItems');
-    //         const resJson = await response.json();
-    //         setData(resJson._embedded.womenItems);
-    //     } catch (error) {
-    //         console.error(error);
-    //     }
-    // }
-
     useEffect(() => {
         dispatch(fetchData())
-        // getData();
     }, [dispatch])
 
     // error handling & map successful query data 
-    const renderRecipes = () => {
+    const renderData = () => {
         if (loading) return <p>Loading recipes...</p>
         if (hasErrors) return <p>Cannot display recipes...</p>
 
@@ -43,18 +30,7 @@ const App = () => {
     return (
         <div className="App">
             <h1>Market Item</h1>
-            {renderRecipes()}
-            {/* {
-                data.map((item, index) => {
-                    return (
-                        <div key={index}>
-                            <p>{item.itemName}</p>
-                            <p>{item.id}</p>
-                        </div>
-                    )
-                })
-
-            } */}
+            {renderData()}
         </div>
     );
 }
