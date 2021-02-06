@@ -21,9 +21,9 @@ const App = () => {
         if (loading) return <p>Loading recipes...</p>
         if (hasErrors) return <p>Cannot display recipes...</p>
 
-        return info.map((recipe, index) =>
+        return info.map((item, index) =>
             <div key={index} className='tile'>
-                <h2>{recipe.itemName}</h2>
+                <h2>{item.itemName}</h2>
             </div>
         )
     }
