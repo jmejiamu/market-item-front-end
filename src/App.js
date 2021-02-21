@@ -39,7 +39,10 @@ const App = () => {
     return (
         <div className="App">
             <h1>Market Item</h1>
-            {renderData()}
+            <div className="grid-container">
+
+                {renderData()}
+            </div>
 
         </div>
     );
