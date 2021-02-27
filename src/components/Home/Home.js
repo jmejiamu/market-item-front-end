@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { fetchData, itemsSelector } from '../../features/counter/fetchSlice';
+import NavBar from '../NavBar/NavBar';
 
 const Home = () => {
 
@@ -34,10 +35,13 @@ const Home = () => {
     }
 
     return (
-        <div className="grid-container">
+        <>
+            <NavBar />
+            <div className="grid-container">
 
-            {renderData()}
-        </div>
+                {renderData()}
+            </div>
+        </>
     );
 };
 

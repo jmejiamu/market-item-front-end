@@ -39,7 +39,6 @@ const App = () => {
 
     return (
         <div className="App">
-            <h1>Market Item</h1>
             {/* <div className="grid-container">
 
                 {renderData()}
