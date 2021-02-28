@@ -39,10 +39,23 @@ const Home = () => {
         <>
             <NavBar />
             <Carousel />
-            <div className="grid-container">
-
+            {/* <div className="grid-container">
                 {renderData()}
+            </div> */}
+            <h2>Category</h2>
+            <div class="row">
+                <div class="column">
+                    <img className="img-category" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Snow" style={{ width: '100 %' }} />
+                </div>
+                <div class="column">
+                    <img className="img-category" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Snow" style={{ width: '100 %' }} />
+                </div>
+                <div class="column">
+                    <img className="img-category" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Snow" style={{ width: '100 %' }} />
+                </div>
             </div>
+            <h2>New</h2>
+            <h2>Popular</h2>
         </>
     );
 };
