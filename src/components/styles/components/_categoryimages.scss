@@ -15,7 +15,48 @@
   display: table;
 }
 .img-category{
-    height: 400px;
-    width: 400px;
+   
+opacity: 1;
+  display: block;
+  width: 100%;
+  height: 80%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.wrapper{
+    position: relative;
+  width: 50%;;
+}
+.column:hover .overlay {
+  opacity: 1;
+}
+
+
+
+.text {
+//  background-color: #4CAF50;
+//   color: white;
+//   font-size: 16px;
+//   padding: 16px 32px;
+// position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+.category-title{
+    text-align: left;
+}
+
+
+.column:hover .img-category {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
 }
 
