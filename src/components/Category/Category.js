@@ -3,7 +3,7 @@ import React from 'react';
 const Category = () => {
     return (
         <div className="container">
-            <h2 className="category-title">Category</h2>
+            <h2 className="category-title mt-5 mb-5">Category</h2>
 
             <div className="wrapper">
                 <div class="row">
