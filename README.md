@@ -10,7 +10,7 @@
 * Front-end 
   * React
   * Redux Tool Kit
-  * Scss
+  * Sass
   * Bootstrap
 * Back-end
   * Java
