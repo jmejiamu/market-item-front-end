@@ -50,7 +50,7 @@ export function fetchData() {
             const response = await fetch('http://localhost:8080/api/womenItems');
             const data = await response.json();
 
-            console.log('>>', data._embedded.womenItems);
+            // console.log('>>', data._embedded.womenItems);
 
             dispatch(getDataSuccess(data._embedded.womenItems))
         } catch (error) {

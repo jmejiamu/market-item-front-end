@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { useDispatch, useSelector } from 'react-redux';
+
+import { fetchData, popularSelector } from '../../features/fetchPopular/fetchPopular';
+
 
 const Popular = () => {
+    const dispatch = useDispatch();
+    const { popular, loading, hasError } = useSelector(popularSelector);
+
+    // console.log('>>HEre', popular);
+
+    useEffect(() => {
+        dispatch(fetchData());
+    }, [dispatch])
     return (
         <div className="container" >
             <h2 className="popular-title">Popular</h2>
