@@ -43,7 +43,7 @@ export function fetchData() {
             const response = await fetchData('http://localhost:8080/api/news');
             const data = await response.json();
 
-            dispatch(getDataSuccess(data._embedded.news))
+            dispatch(getDataSuccess(data._embedded.populars))
         } catch (error) {
             dispatch(getDataFailure());
         }
