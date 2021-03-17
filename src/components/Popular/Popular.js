@@ -20,7 +20,7 @@ const Popular = () => {
                     <img className="card-img-top img-style-popular" src={item.itemUrl} alt="men" />
                     <div className="card-body" >
                         <h5 className="card-title">{item.itemName}</h5>
-                        <p className="card-text" >{item.description}</p>
+                        <p className="card-text" >{item.itemDescription}</p>
                     </div>
                 </div>
             )
