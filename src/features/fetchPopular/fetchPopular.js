@@ -42,7 +42,6 @@ export function fetchData() {
         try {
             const response = await fetch('http://localhost:8080/api/populars');
             const data = await response.json();
-            console.log('HERE', data._embedded.populars);
 
             dispatch(getDataSuccess(data._embedded.populars))
         } catch (error) {

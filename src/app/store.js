@@ -11,6 +11,6 @@ export default configureStore({
     info: infoReducer,
     carousel: carouselReducer,
     popular: popularReducer,
-    new: newReducer
+    newdata: newReducer
   },
 });

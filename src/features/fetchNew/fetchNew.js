@@ -1,18 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const newDataSlice = createSlice({
-    name: 'new',
+    name: 'newdata', // can be any name
     initialState: {
         loading: false,
         hasError: false,
-        new: []
+        newdata: []
     },
     reducers: {
         getData: state => {
             state.loading = true;
         },
         getDataSucess: (state, action) => {
-            state.new = action.payload
+            state.newdata = action.payload
             state.loading = false
             state.hasError = false
         },
@@ -27,7 +27,7 @@ const newDataSlice = createSlice({
 export const { getData, getDataSucess, getDataFailure } = newDataSlice.actions
 
 // seletor
-export const newSelector = state => state.new
+export const newSelector = state => state.newdata
 
 //  The reducer
 export default newDataSlice.reducer
