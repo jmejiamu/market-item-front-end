@@ -43,9 +43,6 @@ const Home = () => {
         <>
             <NavBar />
             <Carousel />
-            {/* <div className="grid-container">
-                {renderData()}
-            </div> */}
             <Category />
             <New />
             <Popular />
