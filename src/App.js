@@ -17,7 +17,6 @@ const App = () => {
                 <Switch>
                     <Route exact={true} path='/' render={props => <Home {...props} />} />
                     <Route exact={true} path='/mens' render={props => <MenItems {...props} />} />
-                    {/* <Route exact path='/mens' component={MenItems} /> */}
                 </Switch>
 
 
