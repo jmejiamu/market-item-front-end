@@ -3,11 +3,7 @@ import NavBar from '../NavBar/NavBar';
 
 const MenItems = () => {
     return (
-        // <div>
 
-        //     <h1>This is mens Items </h1>
-        //     <h2>the</h2>
-        // </div>
         <>
 
             <NavBar />
@@ -29,7 +25,7 @@ const MenItems = () => {
                     </li>
                     <li class="header">Accesories</li>
                     <li>
-                        <a href="#">
+                        <a href="#wallets">
                             <i class="fa fa-users" aria-hidden="true"></i> Wallet
       </a>
                     </li>
@@ -50,14 +46,39 @@ const MenItems = () => {
 
                 <div class="container-fluid" id="t-shirt">
 
-
                     <div class="jumbotron">
-                        <h1>T-shirt</h1>
-                        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-                        </p>
+                        <h1>T-Shirt</h1>
+                        <div className="grid-container" >
+
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -66,24 +87,77 @@ const MenItems = () => {
 
                     <div class="jumbotron">
                         <h1>Jackets</h1>
-                        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-                        </p>
+                        <div className="grid-container" >
+
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-                <div class="container-fluid">
+                <div class="container-fluid" id="wallets">
 
 
                     <div class="jumbotron">
-                        <h1>Navbar example</h1>
-                        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-                        </p>
+                        <h1>Wallets</h1>
+                        <div className="grid-container" >
+
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
