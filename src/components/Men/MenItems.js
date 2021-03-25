@@ -30,12 +30,12 @@ const MenItems = () => {
       </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#hats">
                             <i class="fa fa-cog" aria-hidden="true"></i> Hats
       </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#watch">
                             <i class="fa fa-info-circle" aria-hidden="true"></i> Watch
       </a>
                     </li>
@@ -126,6 +126,87 @@ const MenItems = () => {
 
                     <div class="jumbotron">
                         <h1>Wallets</h1>
+                        <div className="grid-container" >
+
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container-fluid" id="hats">
+
+
+                    <div class="jumbotron">
+                        <h1>Hats</h1>
+                        <div className="grid-container" >
+
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                            <div className='card card-style mt-5 grid-item mb-5'>
+                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
+                                <div className="card-body" >
+                                    <h5 className="card-title">Titlte</h5>
+                                    <p className="card-text" >Text </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container-fluid" id="watch">
+
+
+                    <div class="jumbotron">
+                        <h1>Watch</h1>
                         <div className="grid-container" >
 
                             <div className='card card-style mt-5 grid-item mb-5'>
