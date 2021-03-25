@@ -11,7 +11,7 @@
   * React
   * Redux Tool Kit
   * Sass
-  * Bootstrap
+  * Bootstrap 4
 * Back-end
   * Java
   * Springboot
