@@ -20,7 +20,7 @@ const MenItems = () => {
                     </li>
                     <li>
                         <a href="#jackets">
-                            <i class="fa fa-tachometer" aria-hidden="true"></i> Jackets
+                            <i class="fa fa-handshake-o" aria-hidden="true"></i> Jackets
       </a>
                     </li>
                     <li class="header">Accesories</li>
