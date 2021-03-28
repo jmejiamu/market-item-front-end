@@ -128,7 +128,6 @@ const MenItems = () => {
                     <div class="jumbotron">
                         <h1>Wallets</h1>
                         <div className="grid-container" >
-
                             <Wallet />
                         </div>
 

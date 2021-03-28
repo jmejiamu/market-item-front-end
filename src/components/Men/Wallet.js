@@ -32,7 +32,7 @@ const Wallet = () => {
     }, [dispatch])
 
     return (
-        <div>
+        <div className="grid-container">
             {renderData()}
         </div>
     );
