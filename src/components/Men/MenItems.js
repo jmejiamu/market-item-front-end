@@ -16,28 +16,28 @@ const MenItems = () => {
                     <li>
                         <a href="#t-shirt">
                             <i class="fa fa-home" aria-hidden="true"></i> T-shirt
-      </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#jackets">
                             <i class="fa fa-handshake-o" aria-hidden="true"></i> Jackets
-      </a>
+                        </a>
                     </li>
                     <li class="header">Accesories</li>
                     <li>
                         <a href="#wallets">
                             <i class="fa fa-users" aria-hidden="true"></i> Wallet
-      </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#hats">
                             <i class="fa fa-cog" aria-hidden="true"></i> Hats
-      </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#watch">
                             <i class="fa fa-info-circle" aria-hidden="true"></i> Watch
-      </a>
+                        </a>
                     </li>
                 </ul>
             </div>
