@@ -10,7 +10,7 @@ const MenItems = () => {
             <div class="sidebar-container">
                 <div class="sidebar-logo">
                     Mens Items
-  </div>
+                </div>
                 <ul class="sidebar-navigation">
                     <li class="header">Men's clearance</li>
                     <li>
