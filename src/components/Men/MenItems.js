@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
+import Wallet from './Wallet';
 
 const MenItems = () => {
     return (
@@ -128,34 +129,7 @@ const MenItems = () => {
                         <h1>Wallets</h1>
                         <div className="grid-container" >
 
-                            <div className='card card-style mt-5 grid-item mb-5'>
-                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
-                                <div className="card-body" >
-                                    <h5 className="card-title">Titlte</h5>
-                                    <p className="card-text" >Text </p>
-                                </div>
-                            </div>
-                            <div className='card card-style mt-5 grid-item mb-5'>
-                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
-                                <div className="card-body" >
-                                    <h5 className="card-title">Titlte</h5>
-                                    <p className="card-text" >Text </p>
-                                </div>
-                            </div>
-                            <div className='card card-style mt-5 grid-item mb-5'>
-                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
-                                <div className="card-body" >
-                                    <h5 className="card-title">Titlte</h5>
-                                    <p className="card-text" >Text </p>
-                                </div>
-                            </div>
-                            <div className='card card-style mt-5 grid-item mb-5'>
-                                <img className="card-img-top img-style-popular" src="https://dummyimage.com/600x400/000/fff.jpg" alt="men" />
-                                <div className="card-body" >
-                                    <h5 className="card-title">Titlte</h5>
-                                    <p className="card-text" >Text </p>
-                                </div>
-                            </div>
+                            <Wallet />
                         </div>
 
                     </div>
