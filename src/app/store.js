@@ -5,6 +5,7 @@ import carouselReducer from '../features/fetchCarousel/fetchCarousel';
 import popularReducer from '../features/fetchPopular/fetchPopular';
 import newReducer from '../features/fetchNew/fetchNew';
 import walletReducer from '../features/fetchWallet/fetchWallet';
+import watchReducer from '../features/fetchWatch/fetchWatch';
 
 export default configureStore({
   reducer: {
@@ -13,6 +14,7 @@ export default configureStore({
     carousel: carouselReducer,
     popular: popularReducer,
     newdata: newReducer,
-    wallet: walletReducer
+    wallet: walletReducer,
+    watch: watchReducer
   },
 });
