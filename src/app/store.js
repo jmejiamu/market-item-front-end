@@ -6,6 +6,7 @@ import popularReducer from '../features/fetchPopular/fetchPopular';
 import newReducer from '../features/fetchNew/fetchNew';
 import walletReducer from '../features/fetchWallet/fetchWallet';
 import watchReducer from '../features/fetchWatch/fetchWatch';
+import hatReducer from '../features/fetchHats/fetchHats';
 
 export default configureStore({
   reducer: {
@@ -15,6 +16,7 @@ export default configureStore({
     popular: popularReducer,
     newdata: newReducer,
     wallet: walletReducer,
-    watch: watchReducer
+    watch: watchReducer,
+    hat: hatReducer
   },
 });

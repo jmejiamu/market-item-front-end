@@ -40,7 +40,6 @@ export function fetchData() {
         try {
             const response = await fetch('http://localhost:8080/api/menWallets');
             const data = await response.json();
-            console.log(data);
 
             dispatch(getDataSuccess(data._embedded.menWallets))
         } catch (error) {
