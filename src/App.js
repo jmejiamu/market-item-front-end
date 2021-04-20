@@ -5,7 +5,7 @@ import './App.css';
 
 import '../src/components/styles/styles.scss';
 import Home from './components/Home/Home';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MenItems from './components/Men/MenItems';
 import Woman from './components/Woman/Woman';
 

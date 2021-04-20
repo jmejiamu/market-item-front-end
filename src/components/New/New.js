@@ -12,8 +12,8 @@ const New = () => {
 
 
     const renderData = () => {
-        if (loading) return <p>Loading...</p>
-        if (hasError) return <p>Something wrong could happend</p>
+        if (loading) return <p className="donutSpinner"></p>
+        if (hasError) return <p className="pulseBtn">Something wrong ...</p>
 
         return newdata.map((item, index) => {
             return (
@@ -32,7 +32,7 @@ const New = () => {
     }, [dispatch])
     return (
         <div className="container" >
-            <h2 className="new-title">New</h2>
+            <h2 className="new-title ">New</h2>
             <div className="grid-container" >
                 {renderData()}
 
