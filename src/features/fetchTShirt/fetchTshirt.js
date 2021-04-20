@@ -42,7 +42,7 @@ export function fetchData() {
         try {
             const response = await fetch('http://localhost:8080/api/mentshirts');
             const data = await response.json()
-            dispatch(getDataSucess(data._embedded.menshirts))
+            dispatch(getDataSucess(data._embedded.mentshirts))
         } catch (error) {
             dispatch(getDataFailure());
 
