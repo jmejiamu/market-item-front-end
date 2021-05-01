@@ -24,9 +24,11 @@ const Category = () => {
                         </Link>
                     </div>
                     <div class="column" >
-                        <img className="img-category" src="https://images.unsplash.com/photo-1557855506-3619a44bab73?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=701&q=80" alt="Snow" style={{ width: '100 %' }} />
+                        <Link>
+                            <img className="img-category" src="https://images.unsplash.com/photo-1557855506-3619a44bab73?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=701&q=80" alt="Snow" style={{ width: '100 %' }} />
 
-                        <div className="text" >Electronics</div>
+                            <div className="text" >Electronics</div>
+                        </Link>
 
                     </div>
                 </div>
