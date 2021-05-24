@@ -16,11 +16,18 @@ const Popular = () => {
 
         return popular.map((item, index) => {
             return (
-                <div key={index} className='card card-style mt-5 grid-item mb-5'>
-                    <img className="card-img-top img-style-popular" src={item.itemUrl} alt="men" />
-                    <div className="card-body" >
-                        <h5 className="card-title">{item.itemName}</h5>
-                        <p className="card-text" >{item.itemDescription}</p>
+                <div key={index} class="max-w-sm rounded overflow-hidden shadow-lg mb-10 ">
+                    <img class="w-full h-screen" src={item.itemUrl} alt="Sunset in the mountains" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{item.itemName}</div>
+                        <p class="text-gray-700 text-base">
+                            {item.itemDescription}
+                        </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
                     </div>
                 </div>
             )
