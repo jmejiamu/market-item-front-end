@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Category = () => {
     return (
         <div className="container">
-            <h2 className="category-title mt-5 mb-5">Category</h2>
+            <h2 className="category-title mt-8 mb-8">Category</h2>
 
             <div className="wrapper">
                 <div class="row">
