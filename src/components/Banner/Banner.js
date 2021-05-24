@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { fetchData, carouselSelector } from '../../features/fetchCarousel/fetchCarousel';
 
-const Carousel = () => {
+const Banner = () => {
 
     const dispatch = useDispatch();
 
@@ -26,4 +26,4 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default Banner;

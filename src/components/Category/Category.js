@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Category = () => {
     return (
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto px-5">
             <p className="category-title text-xl font-semibold mt-8 mb-8">Category</p>
 
             <div className="wrapper">

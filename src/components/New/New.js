@@ -31,7 +31,7 @@ const New = () => {
         dispatch(fetchData())
     }, [dispatch])
     return (
-        <div className="container" >
+        <div className="container mx-auto px-5" >
             <h2 className="new-title ">New</h2>
             <div className="grid-container" >
                 {renderData()}

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-import Carousel from '../Carousel/Carousel';
+import Banner from '../Banner/Banner';
 import Category from '../Category/Category';
 import NavBar from '../NavBar/NavBar';
 import New from '../New/New';
@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             <NavBar />
-            <Carousel />
+            <Banner />
             <Category />
             <New />
             <Popular />
