@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Category = () => {
     return (
-        <div className="container">
-            <h2 className="category-title mt-8 mb-8">Category</h2>
+        <div className="container mx-auto px-10">
+            <p className="category-title text-xl font-semibold mt-8 mb-8">Category</p>
 
             <div className="wrapper">
                 <div class="row">
