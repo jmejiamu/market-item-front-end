@@ -40,7 +40,7 @@ const Popular = () => {
     }, [dispatch])
     return (
         <div className="container mx-auto px-5" >
-            <h2 className="popular-title">Popular</h2>
+            <h2 className="popular-title  text-xl font-semibold mb-8">Popular</h2>
             <div className="grid-container" >
                 {renderData()}
 
