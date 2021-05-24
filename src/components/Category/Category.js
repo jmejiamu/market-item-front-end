@@ -18,7 +18,7 @@ const Category = () => {
                     </div>
                     <div class="column">
                         <Link to="/womens" >
-                            <img className="img-category" src="https://images.unsplash.com/photo-1494354145959-25cb82edf23d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Snow" style={{ width: '100 %' }} />
+                            <img className="img-category" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80" alt="Snow" style={{ width: '100 %' }} />
 
                             <div className="text" >Women</div>
                         </Link>
