@@ -42,9 +42,6 @@ const New = () => {
             <p className="new-title text-xl font-semibold  mt-8 mb-8">New</p>
             <div className="grid-container" >
                 {renderData()}
-
-
-
             </div>
         </div>
     );
