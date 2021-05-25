@@ -52,7 +52,7 @@ const MenItems = () => {
                 <div class="container-fluid" id="t-shirt">
 
                     <div class="jumbotron">
-                        <h1>T-Shirt</h1>
+                        <p className="text-xl font-semibold">T-Shirt</p>
                         <div className="grid-container" >
                             <Tshirt />
                         </div>
@@ -63,7 +63,7 @@ const MenItems = () => {
 
 
                     <div class="jumbotron">
-                        <h1>Jackets</h1>
+                        <p className="text-xl font-semibold">Jackets</p>
                         <div className="grid-container" >
 
                             <div className='card card-style mt-5 grid-item mb-5'>
@@ -102,7 +102,7 @@ const MenItems = () => {
 
 
                     <div class="jumbotron">
-                        <h1>Wallets</h1>
+                        <p className="text-xl font-semibold">Wallets</p>
                         <div className="grid-container" >
                             <Wallet />
                         </div>
@@ -115,7 +115,7 @@ const MenItems = () => {
 
 
                     <div class="jumbotron">
-                        <h1>Hats</h1>
+                        <p className="text-xl font-semibold">Hats</p>
                         <div className="grid-container" >
                             <Hats />
                         </div>
@@ -127,7 +127,7 @@ const MenItems = () => {
 
 
                     <div class="jumbotron">
-                        <h1>Watch</h1>
+                        <p className="text-xl font-semibold">Watch</p>
                         <div className="grid-container" >
                             <Watch />
                         </div>
