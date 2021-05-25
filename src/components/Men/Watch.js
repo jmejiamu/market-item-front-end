@@ -32,8 +32,11 @@ const Watch = () => {
     }, [dispatch])
 
     return (
-        <div className="grid-container" >
-            {renderData()}
+        <div className="container mx-auto px-5">
+
+            <div className="grid-container" >
+                {renderData()}
+            </div>
         </div>
     );
 };

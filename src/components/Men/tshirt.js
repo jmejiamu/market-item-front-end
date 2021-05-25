@@ -34,8 +34,7 @@ const Tshirt = () => {
 
 
     return (
-        <div className="container" >
-            <h2 className="popular-title">T-Shirt</h2>
+        <div className="container mx-auto px-5" >
             <div className="grid-container" >
                 {renderData()}
             </div>
