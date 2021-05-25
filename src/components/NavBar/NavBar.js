@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <nav class="flex items-center justify-between flex-wrap bg-blue-400 p-6">
+        <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-blue-400 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
 
                 <span class="font-semibold text-xl tracking-tight">Market Item</span>
