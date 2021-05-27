@@ -9,6 +9,9 @@ const Card = (props) => {
                 <p class="text-gray-700 text-base">
                     {props.item.itemDescription}
                 </p>
+                <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-full">
+                    Add to cart
+                </button>
             </div>
             <div class="px-6 pt-4 pb-2">
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
