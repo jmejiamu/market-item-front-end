@@ -8,6 +8,7 @@ import walletReducer from '../features/fetchWallet/fetchWallet';
 import watchReducer from '../features/fetchWatch/fetchWatch';
 import hatReducer from '../features/fetchHats/fetchHats';
 import tshirtReducer from '../features/fetchTShirt/fetchTshirt';
+import cartReducer from '../features/cartPost/cartData';
 
 export default configureStore({
   reducer: {
@@ -19,6 +20,7 @@ export default configureStore({
     wallet: walletReducer,
     watch: watchReducer,
     hat: hatReducer,
-    tshirt: tshirtReducer
+    tshirt: tshirtReducer,
+    cart: cartReducer
   },
 });
