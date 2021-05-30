@@ -13,7 +13,8 @@ const Card = (props) => {
             addItemToCartAsync({
                 itemName: props.item.itemName,
                 itemDescription: props.item.itemDescription,
-                itemUrl: props.item.itemUrl
+                itemUrl: props.item.itemUrl,
+                price: props.item.price
             })
         )
     }

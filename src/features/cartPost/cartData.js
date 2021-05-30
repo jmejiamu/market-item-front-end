@@ -13,7 +13,8 @@ export const addItemToCartAsync = createAsyncThunk(
             body: JSON.stringify({
                 itemName: payload.itemName,
                 itemDescription: payload.itemDescription,
-                itemUrl: payload.itemUrl
+                itemUrl: payload.itemUrl,
+                price: payload.price
             })
         })
     }
