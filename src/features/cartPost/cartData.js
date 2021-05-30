@@ -32,7 +32,7 @@ const cartItemSlice = createSlice({
             state.loading = true;
         },
         getDataSuccess: (state, action) => {
-            state.hat = action.payload
+            state.cart = action.payload
             state.loading = false
             state.hasError = false
         },
@@ -40,14 +40,8 @@ const cartItemSlice = createSlice({
             state.loading = false
             state.hasError = true
         },
-        addCart: (state, action) => {
-            const cartData = {
-                itemName: action.payload.itemName,
-                itemDescription: action.payload.itemDescription,
-                itemUrl: action.payload.itemUrl
-            };
-            state.push(cartData);
-        },
+
+
     },
     extraReducers: {
         [addItemToCartAsync.fulfilled]: (state, action) => {
@@ -57,10 +51,10 @@ const cartItemSlice = createSlice({
 })
 
 // Three action generated from the slice
-export const { getData, getDataSuccess, getDataFailure } = cartItemSlice.actions
+export const { getData, getDataSuccess, getDataFailure, } = cartItemSlice.actions
 
 // Selector
-export const hatSelector = state => state.hat
+export const cartSelector = state => state.cart
 
 // The reducer
 export default cartItemSlice.reducer
@@ -73,7 +67,8 @@ export function fetchData() {
         try {
             const response = await fetch('http://localhost:8080/api/carts');
             const data = await response.json();
-            dispatch(getDataSuccess(data._embedded.mensHats))
+
+            dispatch(getDataSuccess(data._embedded.carts))
         } catch (error) {
             dispatch(getDataFailure());
         }

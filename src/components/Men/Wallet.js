@@ -10,6 +10,7 @@ const Wallet = () => {
     const dispatch = useDispatch();
     const { wallet, loading, hasError } = useSelector(walletSector);
 
+
     // Error handling & map successfull query data
     const renderData = () => {
         if (loading) return <p>Loading...</p>
