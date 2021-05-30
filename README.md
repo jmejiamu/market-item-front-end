@@ -15,7 +15,7 @@
   * React
   * Redux Tool Kit
   * Sass
-  * Bootstrap 4
+  * Tailwind
   * React Router
 * Back-end
   * Java
