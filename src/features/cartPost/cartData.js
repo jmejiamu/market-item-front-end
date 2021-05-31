@@ -20,6 +20,24 @@ export const addItemToCartAsync = createAsyncThunk(
     }
 )
 
+export const deleteItemCartAsync = createAsyncThunk(
+    'cart/deleteItemCartAsync',
+    async (payload) => {
+        // console.log(payload);
+        try {
+
+            const response = await fetch(`http://localhost:8080/api/carts/${payload.item}`, {
+                method: 'DELETE'
+            })
+
+            return { payload: payload.item }
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+)
+
 const cartItemSlice = createSlice({
     name: 'cart',
     initialState: {
@@ -47,12 +65,19 @@ const cartItemSlice = createSlice({
     extraReducers: {
         [addItemToCartAsync.fulfilled]: (state, action) => {
             state.cart = action.payload
+        },
+        [deleteItemCartAsync.fulfilled]: (state, action) => {
+            // state.cart = action.payload
+            return { cart: state.cart.filter((item) => item.id !== action.payload.payload) }
+            // console.log('=====', action.payload.payload);
+            // console.log('=====', state);
+
         }
     }
 })
 
 // Three action generated from the slice
-export const { getData, getDataSuccess, getDataFailure, } = cartItemSlice.actions
+export const { getData, getDataSuccess, getDataFailure, deleteTodo } = cartItemSlice.actions
 
 // Selector
 export const cartSelector = state => state.cart

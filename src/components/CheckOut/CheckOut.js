@@ -1,20 +1,30 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { cartSelector, fetchData } from '../../features/cartPost/cartData';
-import ThemeCheckout from './ThemeCheckout';
+import { cartSelector, deleteItemCartAsync, fetchData } from '../../features/cartPost/cartData';
+
 
 
 const CheckOut = () => {
 
     const dispatch = useDispatch();
-    const { cart, loading, hasError } = useSelector(cartSelector);
+    const { cart, loading, hasError, } = useSelector(cartSelector);
+
+    const deleteItem = (item) => {
+        dispatch(
+            deleteItemCartAsync({
+                item: item.id,
+            })
+        )
+    }
+
+    // console.log('>>>>>', cart);
 
     // Error handling & map successfull query data
     const renderData = () => {
         if (loading) return <p>Loading...</p>
         if (hasError) return <p>Something when worong</p>
-
+        console.log(cart);
         return cart.map((item, index) => {
             return (
                 <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
@@ -25,7 +35,7 @@ const CheckOut = () => {
                         <div className="flex flex-col justify-between ml-4 flex-grow">
                             <span className="font-bold text-sm">{item.itemName}</span>
                             <span className="text-red-500 text-xs">Apple</span>
-                            <a href="#" className="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
+                            <a href="#" className="font-semibold hover:text-red-500 text-gray-500 text-xs" onClick={() => deleteItem(item)}>Remove</a>
                         </div>
                     </div>
                     <div className="flex justify-center w-1/5">
