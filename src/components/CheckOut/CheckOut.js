@@ -13,7 +13,7 @@ const CheckOut = () => {
     const deleteItem = (item) => {
         dispatch(
             deleteItemCartAsync({
-                item: item.id,
+                id: item.id,
             })
         )
     }

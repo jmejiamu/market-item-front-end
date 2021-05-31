@@ -26,11 +26,11 @@ export const deleteItemCartAsync = createAsyncThunk(
         // console.log(payload);
         try {
 
-            const response = await fetch(`http://localhost:8080/api/carts/${payload.item}`, {
+            const response = await fetch(`http://localhost:8080/api/carts/${payload.id}`, {
                 method: 'DELETE'
             })
 
-            return { payload: payload.item }
+            return { id: payload.id }
 
         } catch (error) {
             console.error(error);
@@ -67,11 +67,7 @@ const cartItemSlice = createSlice({
             state.cart = action.payload
         },
         [deleteItemCartAsync.fulfilled]: (state, action) => {
-            // state.cart = action.payload
-            return { cart: state.cart.filter((item) => item.id !== action.payload.payload) }
-            // console.log('=====', action.payload.payload);
-            // console.log('=====', state);
-
+            return { cart: state.cart.filter((item) => item.id !== action.payload.id) }
         }
     }
 })
