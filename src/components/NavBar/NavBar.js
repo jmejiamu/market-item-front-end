@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { fetchData, cartSelector } from '../../features/cartPost/cartData';
+import { fetchData, cartSelector, getCartAsync } from '../../features/cartPost/cartData';
 
 const NavBar = () => {
 
     const dispatch = useDispatch();
     const { cart } = useSelector(cartSelector);
 
+
+
     //TODO : fix count ne the cart
-    let count = cart.filter((item) => item.id).length;
+    let count = cart.filter((item) => item.id).length
     // const numOfItem = () => {
     //     return cart.map((item, index) => {
     //         if (item.id) {

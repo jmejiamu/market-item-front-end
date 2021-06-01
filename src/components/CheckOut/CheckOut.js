@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { cartSelector, deleteItemCartAsync, fetchData } from '../../features/cartPost/cartData';
@@ -6,6 +6,8 @@ import { cartSelector, deleteItemCartAsync, fetchData } from '../../features/car
 
 
 const CheckOut = () => {
+
+    const [total, setTotal] = useState(200)
 
     const dispatch = useDispatch();
     const { cart, loading, hasError, } = useSelector(cartSelector);
@@ -18,7 +20,6 @@ const CheckOut = () => {
         )
     }
 
-    // console.log('>>>>>', cart);
 
     // Error handling & map successfull query data
     const renderData = () => {
@@ -49,7 +50,7 @@ const CheckOut = () => {
                         </svg>
                     </div>
                     <span className="text-center w-1/5 font-semibold text-sm">$ {item.price}</span>
-                    <span className="text-center w-1/5 font-semibold text-sm">$400.00</span>
+                    <span className="text-center w-1/5 font-semibold text-sm">$ {item.price}</span>
                 </div>
             )
         })

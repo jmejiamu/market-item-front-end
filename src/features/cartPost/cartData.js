@@ -54,11 +54,13 @@ const cartItemSlice = createSlice({
             state.cart = action.payload
             state.loading = false
             state.hasError = false
+
         },
         getDataFailure: state => {
             state.loading = false
             state.hasError = true
         },
+
 
 
     },
@@ -68,12 +70,13 @@ const cartItemSlice = createSlice({
         },
         [deleteItemCartAsync.fulfilled]: (state, action) => {
             return { cart: state.cart.filter((item) => item.id !== action.payload.id) }
-        }
+        },
+
     }
 })
 
 // Three action generated from the slice
-export const { getData, getDataSuccess, getDataFailure, deleteTodo } = cartItemSlice.actions
+export const { getData, getDataSuccess, getDataFailure, } = cartItemSlice.actions
 
 // Selector
 export const cartSelector = state => state.cart
