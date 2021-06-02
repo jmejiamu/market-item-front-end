@@ -13,6 +13,7 @@
 ## Tech Stack used
 * Front-end 
   * React
+  * JavaScript
   * Redux Tool Kit
   * Sass
   * Tailwind
