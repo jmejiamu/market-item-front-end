@@ -18,6 +18,7 @@
   * Sass
   * Tailwind
   * React Router
+  * Hooks
 * Back-end
   * Java
   * Springboot
