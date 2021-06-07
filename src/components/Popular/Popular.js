@@ -12,7 +12,7 @@ const Popular = () => {
     // Error handling & map successful query data
     const renderData = () => {
         if (loading) return <p className="donutSpinner" ></p>
-        if (hasError) return <p className="pulseBtn">Something wrong ...</p>
+        if (hasError) return <p className="pulseBtn text-center">Something wrong ...</p>
 
         return popular.map((item, index) => {
             return (
