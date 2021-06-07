@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { cartSelector, deleteItemCartAsync, fetchData } from '../../features/cartPost/cartData';
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -62,6 +63,7 @@ const CheckOut = () => {
 
 
     return (
+
         <div className="bg-gray-100">
             <div className="container mx-auto mt-10">
                 <div className="flex shadow-md my-10">

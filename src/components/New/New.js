@@ -12,8 +12,8 @@ const New = () => {
 
 
     const renderData = () => {
-        if (loading) return <p className="donutSpinner"></p>
-        if (hasError) return <p className="pulseBtn">Something wrong ...</p>
+        if (loading) return <p className="donutSpinner text-center items-center content-center"></p>
+        if (hasError) return <div className="text-center items-center content-center"><p className="pulseBtn items-center">Something wrong ...</p></div>
 
         return newdata.map((item, index) => {
             return (
