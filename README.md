@@ -25,4 +25,3 @@
   * MySql
 * Other tools
   * Postman
-  * Figma
